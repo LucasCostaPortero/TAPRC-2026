@@ -10,3 +10,39 @@ def timer_trigger(myTimer: func.TimerRequest) -> None:
         logging.info('The timer is past due!')
 
     logging.info('Python timer trigger function executed.')
+
+@app.timer_trigger(schedule="0 * * * * *", arg_name="myTimer", run_on_startup=False,
+              use_monitor=False) 
+def timer_trigger_2(myTimer: func.TimerRequest) -> None:
+    
+    if myTimer.past_due:
+        logging.info('The timer is past due!')
+
+    logging.info('Python timer trigger function executed.')
+
+@app.timer_trigger(schedule="0 * * * * *", arg_name="myTimer", run_on_startup=False,
+              use_monitor=False) 
+def timer_trigger_3(myTimer: func.TimerRequest) -> None:
+    
+    if myTimer.past_due:
+        logging.info('The timer is past due!')
+
+    logging.info('Python timer trigger function executed.')
+
+@app.timer_trigger(schedule="0 * * * * *", arg_name="myTimer", run_on_startup=False,
+              use_monitor=False) 
+def timer_trigger_4(myTimer: func.TimerRequest) -> None:
+    
+    if myTimer.past_due:
+        logging.info('The timer is past due!')
+
+    logging.info('Python timer trigger function executed.')
+
+@app.timer_trigger(schedule="0 * * * * *", arg_name="myTimer", run_on_startup=False,
+              use_monitor=False) 
+def timer_trigger_5(myTimer: func.TimerRequest) -> None:
+    
+    if myTimer.past_due:
+        logging.info('The timer is past due!')
+
+    logging.info('Python timer trigger function executed.')
